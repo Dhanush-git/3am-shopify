@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "tw": "npx tailwindcss -i ./assets/base.tailwind.css -o ./assets/base.css --watch",
+    "build": "npx tailwindcss -i ./assets/base.tailwind.css -o ./assets/base.css --minify"
+
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  }
+}
