@@ -21,3 +21,6 @@ Thumbs.db
 logs
 *.log
 .env
+
+# Base CSS
+assets/base.css
