@@ -23,7 +23,8 @@ jobs:
         run: npm run build
 
       - name: git checkout
-        run: git checkout -b production
-        run: git add --all
-        run: git commit -m "New build--${{ github.run_id }}"
-        run: git push origin production --force
+        run: |
+          git checkout -b production
+          git add --all
+          git commit -m "New build--${{ github.run_id }}"
+          git push origin production --force
