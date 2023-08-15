@@ -29,5 +29,5 @@ jobs:
         run: |
           git checkout -b production
           git add --all
-          git commit -m "New build--${{ github.run_id }}"
-          git push origin production --force
+          git commit -m "New build--${{ github.run_id }}" || echo "Nothing to commit"
+          git push origin production --force || echo "Nothing to push"
