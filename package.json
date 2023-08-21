@@ -1,10 +1,13 @@
 {
   "scripts": {
-    "tw": "npx tailwindcss -i ./assets/base.tailwind.css -o ./assets/base.css --watch",
+    "dev": "concurrently -k npm:dev:*",
+    "dev:shopify": "shopify theme dev -e dev",
+    "dev:tailwind": "npx tailwindcss -i ./assets/base.tailwind.css -o ./assets/base.css --watch",
+    "pull": "shopify theme pull -d -o sections/*.json templates/*.json config/*.json",
     "build": "npx tailwindcss -i ./assets/base.tailwind.css -o ./assets/base.css --minify"
-
   },
   "devDependencies": {
+    "concurrently": "^8.2.0",
     "tailwindcss": "^3.3.3"
   }
 }
