@@ -12,43 +12,43 @@
     "settings": [
       {
         "type": "color",
-        "id": "primary-color",
+        "id": "primary_color",
         "label": "Primary",
         "default": "#000000"
       },
       {
         "type": "color",
-        "id": "secondary-color",
+        "id": "secondary_color",
         "label": "Secondary",
         "default": "#000000"
       },
       {
         "type": "color",
-        "id": "tertiary-color",
+        "id": "tertiary_color",
         "label": "Tertiary",
         "default": "#000000"
       },
       {
         "type": "color",
-        "id": "accent-color-1",
+        "id": "accent_color_1",
         "label": "Accent 1",
         "default": "#000000"
       },
       {
         "type": "color",
-        "id": "accent-color-2",
+        "id": "accent_color_2",
         "label": "Accent 2",
         "default": "#000000"
       },
       {
         "type": "color",
-        "id": "button-bg-color",
+        "id": "button_bg_color",
         "label": "Button background",
         "default": "#000000"
       },
       {
         "type": "color",
-        "id": "button-text-color",
+        "id": "button_text_color",
         "label": "Button foregroud",
         "default": "#ffffff"
       }
