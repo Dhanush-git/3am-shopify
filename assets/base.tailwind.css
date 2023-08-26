@@ -15,19 +15,23 @@
 }
 
 @layer components {
-    .button{
+    .page-width {
+        @apply max-w-[var(--page-width)] mx-auto
+    }
+
+    .button {
         @apply rounded-[var(--button-radius)] disabled:opacity-25
     }
 
-    .button--primary{
+    .button--primary {
         @apply bg-[var(--color-button-background)] text-[var(--color-button-foreground)] px-8 py-2
     }
 
-    .button--secondary{
+    .button--secondary {
         @apply border border-[var(--color-button-background)] text-[var(--color-button-background)] px-8 py-2 hover:bg-[var(--color-button-background)] hover:text-[var(--color-button-foreground)]
     }
 
-    .text-link{
+    .text-link {
         @apply underline underline-offset-[0.5rem] hover:bg-black hover:text-white
     }
 }

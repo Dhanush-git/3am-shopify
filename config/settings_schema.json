@@ -43,6 +43,20 @@
     ]
   },
   {
+    "name": "Layout",
+    "settings":[
+      {
+        "type": "range",
+        "id": "page_width",
+        "label": "Page Width",
+        "min": 1000,
+        "max": 1600,
+        "step": 100,
+        "default": 1200
+      }
+    ]
+  },
+  {
     "name": "Buttons",
     "settings":[
       {

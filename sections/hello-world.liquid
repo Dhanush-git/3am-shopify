@@ -1,5 +1,5 @@
-<div>
-  <section class="mx-auto max-w-5xl py-6 px-6 md:py-10">
+<div class="page-width">
+  <section>
     <h2 class="h00 mb-8">Typography</h2>
     <h2 class="h00">Heading Level 00</h2>
     <h2 class="h0">Heading Level 0</h2>
@@ -12,13 +12,13 @@
     <p class="pt-4 mt-4"> Body text : Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit pariatur perferendis, quo consequuntur iusto dolores fuga voluptas aliquid praesentium esse. Amet nihil facilis quae fugit nisi voluptatem repellendus a neque!</p>
     <p class="body-small border-t pt-4 mt-4">Body small: Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit pariatur perferendis, quo consequuntur iusto dolores fuga voluptas aliquid praesentium esse. Amet nihil facilis quae fugit nisi voluptatem repellendus a neque!</p>
     <p class="body-xsmall border-t pt-4 mt-4">Body extra small : Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit pariatur perferendis, quo consequuntur iusto dolores fuga voluptas aliquid praesentium esse. Amet nihil facilis quae fugit nisi voluptatem repellendus a neque!</p>
-    <a class="text-link body-small mt-8 inline-block px-2" href="https://primer.style/css/storybook/?path=/docs/support-typography--docs">typography ref ></a>
+    <a class="text-link body-small mt-8 inline-block px-2" href="https://primer.style/css/storybook/?path=/docs/support-typography--docs" target="_blank">typography ref ></a>
   </section>
-  <section class="mx-auto max-w-5xl py-6 px-6 md:py-10">
+  <section>
     <h2 class="h00 mb-8">Colors</h2>
 
     <!-- Base Colors -->
-    <div class="grid grid-cols-4 gap-4">
+    <div class="grid grid-cols-4 gap-4 md:grid-cols-6 lg:grid-cols-8">
       <div class="body-xsmall">
         <div class="bg-primary aspect-square border-2 border-black"></div>
         <div class="mt-2">{{ settings.primary_color }}</div>
@@ -37,7 +37,7 @@
     </div>
 
     <!-- Accent Colors -->
-    <div class="grid grid-cols-4 gap-4 mt-8">
+    <div class="grid grid-cols-4 gap-4 md:grid-cols-6 lg:grid-cols-8 mt-8">
       <div class="body-xsmall">
         <div class="bg-accent-1 aspect-square border-2 border-black"></div>
         <div class="mt-2">{{ settings.accent_color_1 }}</div>
@@ -51,7 +51,7 @@
     </div>
 
     <!-- Button Colors -->
-    <div class="grid grid-cols-4 gap-4 mt-8">
+    <div class="grid grid-cols-4 gap-4 md:grid-cols-6 lg:grid-cols-8 mt-8">
       <div class="body-xsmall">
         <div class="bg-[var(--color-button-background)] aspect-square border-2 border-black"></div>
         <div class="mt-2">{{ settings.button_bg_color }}</div>
@@ -64,7 +64,7 @@
       </div>
     </div>
   </section>
-  <section class="mx-auto max-w-5xl py-6 px-6 md:py-10">
+  <section>
     <h2 class="h00 mb-8">Buttons</h2>
     <div class="flex flex-wrap gap-4 items-center">
       <button class="button button--primary">Button</button>
@@ -75,7 +75,7 @@
       <a class="text-link inline-block px-2" href="#">Link</a>
     </div>
   </section>
-  <section class="mx-auto max-w-5xl py-6 px-6 md:py-10 border-t">
+  <section class="border-t">
     <h2 class="h00 mb-8">Components</h2>
     <details class="group/details" open>
       <summary class="flex justify-between items-center">
@@ -98,15 +98,25 @@
       <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos culpa consectetur alias odit minima nisi natus pariatur vero, consequatur tempore error minus eum, labore nulla animi! Dolorem sit fuga ipsa.</p>
     </details>
   </section>
-  <section class="mx-auto max-w-5xl py-6 px-6 md:py-10 border-t">
-    <p class="font-normal underline underline-offset-[0.5rem] mb-8">Music I listened to while I was coding this 🎵 :</p>
-    {% render 'spotify' %}
-  </section>
+  {% if section.settings.show_spotify_iframe %}
+    <section class="border-t">
+      <p class="font-normal underline underline-offset-[0.5rem] mb-8">Music I listened to while I was coding this 🎵 :</p>
+      {% render 'spotify' %}
+    </section>
+  {% endif %}
 </div>
 
 {% schema %}
 {
   "name": "Hello World",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "show_spotify_iframe",
+      "label": "Show Music Recommendation",
+      "default": true
+    }
+  ],
   "presets": [
     {
       "name": "Hello World"
