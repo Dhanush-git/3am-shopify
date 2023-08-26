@@ -6,5 +6,52 @@
     "theme_author": "Dhanush-git",
     "theme_documentation_url": "https://docs.3amsessions.com",
     "theme_support_url": "https://help.3amsessions.com"
+  },
+  {
+    "name": "Color",
+    "settings": [
+      {
+        "type": "color",
+        "id": "primary-color",
+        "label": "Primary",
+        "default": "#000000"
+      },
+      {
+        "type": "color",
+        "id": "secondary-color",
+        "label": "Secondary",
+        "default": "#000000"
+      },
+      {
+        "type": "color",
+        "id": "tertiary-color",
+        "label": "Tertiary",
+        "default": "#000000"
+      },
+      {
+        "type": "color",
+        "id": "accent-color-1",
+        "label": "Accent 1",
+        "default": "#000000"
+      },
+      {
+        "type": "color",
+        "id": "accent-color-2",
+        "label": "Accent 2",
+        "default": "#000000"
+      },
+      {
+        "type": "color",
+        "id": "button-bg-color",
+        "label": "Button background",
+        "default": "#000000"
+      },
+      {
+        "type": "color",
+        "id": "button-text-color",
+        "label": "Button foregroud",
+        "default": "#ffffff"
+      }
+    ]
   }
 ]

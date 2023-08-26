@@ -3,3 +3,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base{
+    details > summary {
+        @apply cursor-pointer
+    }
+}
+
+@layer components {
+    .button{
+        @apply bg-black text-white px-8 py-2
+    }
+
+    .button--secondary{
+        @apply border border-black text-black px-8 py-2 hover:bg-black hover:text-white
+    }
+
+    .text-link{
+        @apply underline underline-offset-[0.5rem] hover:bg-black hover:text-white
+    }
+}
