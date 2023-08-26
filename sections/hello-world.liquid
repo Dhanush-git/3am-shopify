@@ -15,10 +15,63 @@
     <a class="text-link body-small mt-8 inline-block px-2" href="https://primer.style/css/storybook/?path=/docs/support-typography--docs">typography ref ></a>
   </section>
   <section class="mx-auto max-w-5xl py-6 px-6 md:py-10">
+    <h2 class="h00 mb-8">Colors</h2>
+
+    <!-- Base Colors -->
+    <div class="grid grid-cols-4 gap-4">
+      <div class="body-xsmall">
+        <div class="bg-primary aspect-square border-2 border-black"></div>
+        <div class="mt-2">{{ settings.primary_color }}</div>
+        <div>// primary</div>
+      </div>
+      <div class="body-xsmall">
+        <div class="bg-secondary aspect-square border-2 border-black"></div>
+        <div class="mt-2">{{ settings.secondary_color }}</div>
+        <div>// secondary</div>
+      </div>
+      <div class="body-xsmall">
+        <div class="bg-tertiary aspect-square border-2 border-black"></div>
+        <div class="mt-2">{{ settings.tertiary_color }}</div>
+        <div>// tertiary</div>
+      </div>
+    </div>
+
+    <!-- Accent Colors -->
+    <div class="grid grid-cols-4 gap-4 mt-8">
+      <div class="body-xsmall">
+        <div class="bg-accent-1 aspect-square border-2 border-black"></div>
+        <div class="mt-2">{{ settings.accent_color_1 }}</div>
+        <div>// accent_1</div>
+      </div>
+      <div class="body-xsmall">
+        <div class="bg-accent-2 aspect-square border-2 border-black"></div>
+        <div class="mt-2">{{ settings.accent_color_2 }}</div>
+        <div>// accent_2</div>
+      </div>
+    </div>
+
+    <!-- Button Colors -->
+    <div class="grid grid-cols-4 gap-4 mt-8">
+      <div class="body-xsmall">
+        <div class="bg-[var(--color-button-background)] aspect-square border-2 border-black"></div>
+        <div class="mt-2">{{ settings.button_bg_color }}</div>
+        <div>// button_bg</div>
+      </div>
+      <div class="body-xsmall">
+        <div class="bg-[var(--color-button-foreground)] aspect-square border-2 border-black"></div>
+        <div class="mt-2">{{ settings.button_text_color }}</div>
+        <div>// button_label</div>
+      </div>
+    </div>
+  </section>
+  <section class="mx-auto max-w-5xl py-6 px-6 md:py-10">
     <h2 class="h00 mb-8">Buttons</h2>
-    <div class="grid grid-cols-3 gap-x-4 items-center">
-      <button class="button">Button</button>
-      <button class="button--secondary">Button</button>
+    <div class="flex flex-wrap gap-4 items-center">
+      <button class="button button--primary">Button</button>
+      <button class="button button--primary" disabled>Disabled Button</button>
+      <button class="button button--secondary">Button</button>
+    </div>
+    <div class="mt-4">
       <a class="text-link inline-block px-2" href="#">Link</a>
     </div>
   </section>

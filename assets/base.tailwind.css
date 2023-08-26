@@ -5,18 +5,26 @@
 @tailwind utilities;
 
 @layer base{
-    details > summary {
+    details summary {
         @apply cursor-pointer
+    }
+
+    details summary::-webkit-details-marker {
+        @apply hidden
     }
 }
 
 @layer components {
     .button{
-        @apply bg-black text-white px-8 py-2
+        @apply rounded-[var(--button-radius)] disabled:opacity-25
+    }
+
+    .button--primary{
+        @apply bg-[var(--color-button-background)] text-[var(--color-button-foreground)] px-8 py-2
     }
 
     .button--secondary{
-        @apply border border-black text-black px-8 py-2 hover:bg-black hover:text-white
+        @apply border border-[var(--color-button-background)] text-[var(--color-button-background)] px-8 py-2 hover:bg-[var(--color-button-background)] hover:text-[var(--color-button-foreground)]
     }
 
     .text-link{

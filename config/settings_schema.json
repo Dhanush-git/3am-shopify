@@ -39,18 +39,33 @@
         "id": "accent_color_2",
         "label": "Accent 2",
         "default": "#000000"
-      },
+      }
+    ]
+  },
+  {
+    "name": "Buttons",
+    "settings":[
       {
         "type": "color",
         "id": "button_bg_color",
-        "label": "Button background",
+        "label": "Background Color",
         "default": "#000000"
       },
       {
         "type": "color",
         "id": "button_text_color",
-        "label": "Button foregroud",
+        "label": "Foregroud Color",
         "default": "#ffffff"
+      },
+      {
+        "type": "range",
+        "id": "button_radius",
+        "label": "Border Radius",
+        "min": 0,
+        "max": 100,
+        "default": 0,
+        "step": 1,
+        "unit": "px"
       }
     ]
   }
