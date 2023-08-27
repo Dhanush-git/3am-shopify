@@ -7,13 +7,13 @@ body{
 }
 
 /* aka called caption */
-.body-small{
+.body-small, .b-s{
     font-size: var(--body-text-s);
     line-height: calc(var(--body-text-s) * var(--line-height-scale));
 }
 
 /* aka called caption small */
-.body-xsmall{
+.body-xsmall, .b-xs{
     font-size: var(--body-text-xs);
     line-height: calc(var(--body-text-xs) * var(--line-height-scale));
 }

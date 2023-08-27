@@ -39,6 +39,10 @@
         "id": "accent_color_2",
         "label": "Accent 2",
         "default": "#000000"
+      },
+      {
+        "type": "paragraph",
+        "content": "⚠️ Refer tailwind.config.js to use these colors."
       }
     ]
   },
