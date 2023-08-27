@@ -16,7 +16,7 @@
 
 @layer components {
     .page-width {
-        @apply max-w-[var(--page-width)] mx-auto
+        @apply max-w-[var(--page-width)] mx-auto px-6 md:px-14
     }
 
     .button {
