@@ -104,3 +104,7 @@ h6 {
         line-height: calc(var(--h6-size) * var(--line-height-scale));
     }
 }
+
+.shopify-section + .shopify-section {
+    margin-top: var(--section-padding);
+}
