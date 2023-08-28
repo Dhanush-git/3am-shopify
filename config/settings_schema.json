@@ -64,7 +64,7 @@
         "label": "Space between sections",
         "min": 0,
         "max": 100,
-        "step": 20,
+        "step": 10,
         "default": 50
       }
     ]
