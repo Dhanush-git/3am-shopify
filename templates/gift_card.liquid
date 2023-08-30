@@ -8,17 +8,13 @@
 
     <link rel="canonical" href="{{ canonical_url }}">
 
-    <script src="{{ 'vendor/qrcode.js' | shopify_asset_url }}" defer="defer"></script>
-
     {% if settings.favicon != blank %}
       <link fetchpriority="low" rel="icon" href="{{ settings.favicon | image_url: width: 32, height: 32 }}" sizes="32x32">
     {% endif %}
 
-    {% assign formatted_initial_value = gift_card.initial_value | money_without_trailing_zeros | strip_html %}
+    <title>{{ page_title }}</title>
 
-    <title>{{ 'gift_cards.issued.title' | t: value: formatted_initial_value, shop: shop.name }}</title>
-
-    <meta name="description" content="{{ 'gift_cards.issued.subtext' | t }}">
+    <meta name="description" content="{{ page_description | default: shop.name | escape }}">
 
     {% comment %} We preconnect to commonly used third-parties to initiate TCP/TLS handshake {% endcomment %}
     <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
@@ -29,8 +25,9 @@
     {% endunless %}
 
     {% liquid
-      render 'typography'
       render 'colors'
+      render 'typography'
+      render 'css-variables'
     %}
 
     <script>
@@ -41,10 +38,10 @@
     <!-- shopify/apps -->
     {{ content_for_header }}
 
-    {% liquid
-      # Always add entrypoint below content_for_header
-      render 'adastra' with 'base.css'
-    %}
+    <!-- css -->
+    <link rel="stylesheet" href="{{ 'base.css' | asset_url }}">
+    <link rel="stylesheet" href="{{ 'theme.css' | asset_url }}">
+
   </head>
   <body class="font-body-weight grid min-h-full grid-cols-[100%] grid-rows-[auto_1fr_auto] font-body">
     <header class="pt-12 pb-6 text-center">
