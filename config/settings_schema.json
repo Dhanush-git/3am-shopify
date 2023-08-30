@@ -8,41 +8,76 @@
     "theme_support_url": "https://help.3amsessions.com"
   },
   {
-    "name": "Color",
+    "name": "Color Schema",
     "settings": [
       {
-        "type": "color",
-        "id": "primary_color",
-        "label": "Primary",
-        "default": "#000000"
-      },
-      {
-        "type": "color",
-        "id": "secondary_color",
-        "label": "Secondary",
-        "default": "#000000"
-      },
-      {
-        "type": "color",
-        "id": "tertiary_color",
-        "label": "Tertiary",
-        "default": "#000000"
-      },
-      {
-        "type": "color",
-        "id": "accent_color_1",
-        "label": "Accent 1",
-        "default": "#000000"
-      },
-      {
-        "type": "color",
-        "id": "accent_color_2",
-        "label": "Accent 2",
-        "default": "#000000"
-      },
-      {
-        "type": "paragraph",
-        "content": "⚠️ Refer tailwind.config.js to use these colors."
+        "type": "color_scheme_group",
+        "id": "color_schemes",
+        "definition": [
+          {
+            "type": "color",
+            "id": "background",
+            "label": "Background",
+            "default": "#FFFFFF"
+          },
+          {
+            "type": "color_background",
+            "id": "background_gradient",
+            "label": "Background gradient",
+            "info": "Background gradient replaces background where possible."
+          },
+          {
+            "type": "color",
+            "id": "text",
+            "label": "Text",
+            "default": "#121212"
+          },
+          {
+            "type": "color",
+            "id": "button",
+            "label": "Solid button background",
+            "default": "#121212"
+          },
+          {
+            "type": "color",
+            "id": "button_label",
+            "label": "Solid button label",
+            "default": "#FFFFFF"
+          },
+          {
+            "type": "color",
+            "id": "secondary_button",
+            "label": "Outline button",
+            "default": "#121212"
+          },
+          {
+            "type": "color",
+            "id": "secondary_button_label",
+            "label": "Outline button label",
+            "default": "#121212"
+          },
+          {
+            "type": "color",
+            "id": "shadow",
+            "label": "Shadow",
+            "default": "#121212"
+          }
+        ],
+        "role": {
+          "text": "text",
+          "background": {
+            "solid": "background",
+            "gradient": "background_gradient"
+          },
+          "links": "secondary_button_label",
+          "icons": "text",
+          "primary_button": "button",
+          "on_primary_button": "button_label",
+          "primary_button_border": "button",
+          "secondary_button": "secondary_button",
+          "on_secondary_button": "secondary_button_label",
+          "secondary_button_border": "secondary_button_label"
+        }
       }
     ]
   },

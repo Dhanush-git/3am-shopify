@@ -1,4 +1,4 @@
-<div class="page-width">
+<div class="page-width color-{{ section.settings.color_scheme.id }}">
   <section>
     <h2 class="h00 my-8">Typography</h2>
     <h2 class="h00">Heading Level 00</h2>
@@ -20,47 +20,43 @@
     <!-- Base Colors -->
     <div class="grid grid-cols-4 gap-4 md:grid-cols-6 lg:grid-cols-8">
       <div class="b-xs">
-        <div class="bg-primary aspect-square border-2 border-black"></div>
-        <div class="mt-2">{{ settings.primary_color }}</div>
-        <div>// primary</div>
+        <div class="bg-background aspect-square border-2 border-black"></div>
+        <div>// background</div>
       </div>
       <div class="b-xs">
-        <div class="bg-secondary aspect-square border-2 border-black"></div>
-        <div class="mt-2">{{ settings.secondary_color }}</div>
-        <div>// secondary</div>
-      </div>
-      <div class="b-xs">
-        <div class="bg-tertiary aspect-square border-2 border-black"></div>
-        <div class="mt-2">{{ settings.tertiary_color }}</div>
-        <div>// tertiary</div>
-      </div>
-    </div>
-
-    <!-- Accent Colors -->
-    <div class="grid grid-cols-4 gap-4 md:grid-cols-6 lg:grid-cols-8 mt-8">
-      <div class="b-xs">
-        <div class="bg-accent-1 aspect-square border-2 border-black"></div>
-        <div class="mt-2">{{ settings.accent_color_1 }}</div>
-        <div>// accent_1</div>
-      </div>
-      <div class="b-xs">
-        <div class="bg-accent-2 aspect-square border-2 border-black"></div>
-        <div class="mt-2">{{ settings.accent_color_2 }}</div>
-        <div>// accent_2</div>
+        <div class="bg-foreground aspect-square border-2 border-black"></div>
+        <div>// foreground</div>
       </div>
     </div>
 
     <!-- Button Colors -->
     <div class="grid grid-cols-4 gap-4 md:grid-cols-6 lg:grid-cols-8 mt-8">
       <div class="b-xs">
-        <div class="bg-[var(--color-button-background)] aspect-square border-2 border-black"></div>
+        <div class="bg-button aspect-square border-2 border-black"></div>
         <div class="mt-2">{{ settings.button_bg_color }}</div>
-        <div>// button_bg</div>
+        <div>// button 1 bg</div>
       </div>
       <div class="b-xs">
-        <div class="bg-[var(--color-button-foreground)] aspect-square border-2 border-black"></div>
+        <div class="bg-button-text aspect-square border-2 border-black"></div>
         <div class="mt-2">{{ settings.button_text_color }}</div>
-        <div>// button_label</div>
+        <div>// button 1 label</div>
+      </div>
+      <div class="b-xs">
+        <div class="bg-secondary-button aspect-square border-2 border-black"></div>
+        <div class="mt-2">{{ settings.button_bg_color }}</div>
+        <div>// button 2 bg</div>
+      </div>
+      <div class="b-xs">
+        <div class="bg-secondary-button-text aspect-square border-2 border-black"></div>
+        <div class="mt-2">{{ settings.button_text_color }}</div>
+        <div>// button 2 label</div>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-4 gap-4 md:grid-cols-6 lg:grid-cols-8 mt-8">
+      <div class="b-xs">
+        <div class="bg-shadow aspect-square border-2 border-black"></div>
+        <div>// shadow</div>
       </div>
     </div>
   </section>
@@ -110,6 +106,16 @@
 {
   "name": "Hello World",
   "settings": [
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "default": "scheme_1",
+      "label": "Color Scheme"
+    },
+    {
+      "type": "header",
+      "content": "Additional Settings"
+    },
     {
       "type": "checkbox",
       "id": "show_spotify_iframe",
