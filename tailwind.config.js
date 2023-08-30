@@ -6,11 +6,13 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'primary': 'var(--color-primary)',
-        'secondary': 'var(--color-secondary)',
-        'tertiary': 'var(--color-tertiary)',
-        'accent-1': 'var(--color-accent-1)',
-        'accent-2': 'var(--color-accent-2)',
+        'background':  'var(--color-background)',
+        'foreground': 'var(--color-foreground)',
+        'shadow': 'var(--color-shadow)',
+        'button': 'var(--color-button)',
+        'button-text': 'var(--color-button-text)',
+        'secondary-button': 'var(--color-secondary-button)',
+        'secondary-button-text': 'var(--color-secondary-button-text)'
       }
     },
   },

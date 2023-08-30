@@ -1,13 +1,22 @@
 {% style %}
-  :root {
-    --color-primary: {{ settings.primary_color }};
-    --color-secondary: {{ settings.secondary_color }};
-    --color-tertiary: {{ settings.tertiary_color }};
+  {% for scheme in settings.color_schemes -%}
+    {% assign scheme_classes = scheme_classes | append: ', .color-' | append: scheme.id %}
+    {% if forloop.index == 1 -%}
+      :root,
+    {%- endif %}
+    .color-{{ scheme.id }} {
+      --color-background: {{ scheme.settings.background }};
+      --color-foreground: {{ scheme.settings.text }};
+      --color-shadow: {{ scheme.settings.shadow }};
+      --color-button: {{ scheme.settings.button }};
+      --color-button-text: {{ scheme.settings.button_label }};
+      --color-secondary-button: {{ scheme.settings.secondary_button }};
+      --color-secondary-button-text: {{ scheme.settings.secondary_button_label }};
+    }
+  {% endfor %}
 
-    --color-accent-1: {{ settings.accent_color_1 }};
-    --color-accent-2: {{ settings.accent_color_2 }};
-
-    --color-button-background: {{ settings.button_bg_color }};
-    --color-button-foreground: {{ settings.button_text_color }};
+  {{ scheme_classes | prepend: 'body' }} {
+    color: var(--color-foreground);
+    background-color: var(--color-background);
   }
 {% endstyle %}

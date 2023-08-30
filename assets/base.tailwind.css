@@ -5,6 +5,11 @@
 @tailwind utilities;
 
 @layer base{
+
+    h1,h2,h3,h4,h5,h6,.h00,.h0,.h1,.h2,.h3,.h4,.h5,.h6 {
+        @apply text-foreground
+    }
+
     details summary {
         @apply cursor-pointer
     }
@@ -24,14 +29,19 @@
     }
 
     .button--primary {
-        @apply bg-[var(--color-button-background)] text-[var(--color-button-foreground)] px-8 py-2
+        @apply bg-button text-button-text px-8 py-2
     }
 
     .button--secondary {
-        @apply border border-[var(--color-button-background)] text-[var(--color-button-background)] px-8 py-2 hover:bg-[var(--color-button-background)] hover:text-[var(--color-button-foreground)]
+        @apply border bg-secondary-button border-secondary-button-text text-secondary-button-text px-8 py-2
     }
 
     .text-link {
         @apply underline underline-offset-[0.5rem] hover:bg-black hover:text-white
     }
+}
+
+
+.shopify-section + .shopify-section {
+    margin-top: var(--section-padding);
 }

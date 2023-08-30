@@ -1,6 +1,34 @@
 {
-  "current": {},
+  "current": {
+    "color_schemes": {
+      "scheme_1": {
+        "settings": {
+          "background": "#ffffff",
+          "text": "#121212",
+          "button": "#121212",
+          "button_label": "#ffffff",
+          "secondary_button": "",
+          "secondary_button_label": "#121212",
+          "shadow": "#121212"
+        }
+      }
+    }
+  },
   "presets": {
-    "Default": {}
+    "Default": {
+      "color_schemes": {
+        "scheme_1": {
+          "settings": {
+            "background": "#ffffff",
+            "text": "#121212",
+            "button": "#121212",
+            "button_label": "#ffffff",
+            "secondary_button": "",
+            "secondary_button_label": "#121212",
+            "shadow": "#121212"
+          }
+        }
+      }
+    }
   }
 }
