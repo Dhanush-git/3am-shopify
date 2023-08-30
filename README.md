@@ -4,7 +4,7 @@
 
 ## Usage
 
-To get started clone the template by clicking the **Use this template** button or by running the following command:
+To get started clone the repo by clicking the **<> Code** button or by running the following command:
 
 ```bash
 git clone https://github.com/Dhanush-git/3am-shopify.git
