@@ -8,7 +8,7 @@
     "theme_support_url": "https://help.3amsessions.com"
   },
   {
-    "name": "Color Schema",
+    "name": "Color",
     "settings": [
       {
         "type": "color_scheme_group",
@@ -107,18 +107,6 @@
   {
     "name": "Buttons",
     "settings":[
-      {
-        "type": "color",
-        "id": "button_bg_color",
-        "label": "Background Color",
-        "default": "#000000"
-      },
-      {
-        "type": "color",
-        "id": "button_text_color",
-        "label": "Foregroud Color",
-        "default": "#ffffff"
-      },
       {
         "type": "range",
         "id": "button_radius",

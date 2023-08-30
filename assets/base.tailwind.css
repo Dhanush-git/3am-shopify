@@ -37,7 +37,7 @@
     }
 
     .text-link {
-        @apply underline underline-offset-[0.5rem] hover:bg-black hover:text-white
+        @apply underline underline-offset-[0.5rem] hover:bg-button hover:text-button-text
     }
 }
 
