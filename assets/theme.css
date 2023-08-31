@@ -2,20 +2,20 @@ html{font-size: 62.5%}
 
 body{
     font-size:calc(var(--body-text) * var(--type-body-scale));
-    line-height: calc(var(--body-text) * var(--line-height-scale));
+    line-height: calc(var(--body-text) * var(--type-body-scale) * var(--line-height-scale));
     font-weight:var(--font-body-weight);
 }
 
 /* aka called caption */
 .body-small, .b-s{
-    font-size: var(--body-text-s);
-    line-height: calc(var(--body-text-s) * var(--line-height-scale));
+    font-size: calc(var(--body-text-s) * var(--type-body-scale));
+    line-height: calc(var(--body-text-s) * var(--type-body-scale) * var(--line-height-scale));
 }
 
 /* aka called caption small */
 .body-xsmall, .b-xs{
-    font-size: var(--body-text-xs);
-    line-height: calc(var(--body-text-xs) * var(--line-height-scale));
+    font-size: calc(var(--body-text-xs) * var(--type-body-scale));
+    line-height: calc(var(--body-text-xs) * var(--type-body-scale) * var(--line-height-scale));
 }
 
 h1,h2,h3,h4,h5,h6,
@@ -26,81 +26,81 @@ h1,h2,h3,h4,h5,h6,
 /* Heading sizes - mobile, h4—h6 remain the same size on both mobile & desktop */
 .h00 {
     font-size: calc(var(--h00-size-mobile) * var(--type-heading-scale));
-    line-height: calc(var(--h00-size-mobile) * var(--line-height-scale));
+    line-height: calc(var(--h00-size-mobile) * var(--type-heading-scale) * var(--line-height-scale));
 }
 .h0 {
     font-size: calc(var(--h0-size-mobile) * var(--type-heading-scale));
-    line-height: calc(var(--h0-size-mobile) * var(--line-height-scale));
+    line-height: calc(var(--h0-size-mobile)* var(--type-heading-scale) * var(--line-height-scale));
 }
 .h1,
 h1 {
     font-size: calc(var(--h1-size-mobile) * var(--type-heading-scale));
-    line-height: calc(var(--h1-size-mobile) * var(--line-height-scale));
+    line-height: calc(var(--h1-size-mobile) * var(--type-heading-scale) * var(--line-height-scale));
 }
 .h2,
 h2 {
     font-size: calc(var(--h2-size-mobile) * var(--type-heading-scale));
-    line-height: calc(var(--h2-size-mobile) * var(--line-height-scale));
+    line-height: calc(var(--h2-size-mobile) * var(--type-heading-scale) * var(--line-height-scale));
 }
 .h3,
 h3 {
     font-size: calc(var(--h3-size-mobile) * var(--type-heading-scale));
-    line-height: calc(var(--h3-size-mobile) * var(--line-height-scale));
+    line-height: calc(var(--h3-size-mobile) * var(--type-heading-scale) * var(--line-height-scale));
 }
 .h4,
 h4 {
     font-size: calc(var(--h4-size) * var(--type-heading-scale));
-    line-height: calc(var(--h4-size) * var(--line-height-scale));
+    line-height: calc(var(--h4-size) * var(--type-heading-scale) * var(--line-height-scale));
 }
 .h5,
 h5 {
     font-size: calc(var(--h5-size) * var(--type-heading-scale));
-    line-height: calc(var(--h5-size) * var(--line-height-scale));
+    line-height: calc(var(--h5-size) * var(--type-heading-scale) * var(--line-height-scale));
 }
 .h6,
 h6 {
     font-size: calc(var(--h6-size) * var(--type-heading-scale));
-    line-height: calc(var(--h6-size) * var(--line-height-scale));
+    line-height: calc(var(--h6-size) * var(--type-heading-scale) * var(--line-height-scale));
 }
 
 /* Heading sizes - desktop */
 @media screen and (min-width: 768px) {
     .h00 {
         font-size: calc(var(--h00-size) * var(--type-heading-scale));
-        line-height: calc(var(--h00-size) * var(--line-height-scale));
+        line-height: calc(var(--h00-size) * var(--type-heading-scale) * var(--line-height-scale));
     }
     .h0 {
         font-size: calc(var(--h0-size) * var(--type-heading-scale));
-        line-height: calc(var(--h0-size) * var(--line-height-scale));
+        line-height: calc(var(--h0-size) * var(--type-heading-scale) * var(--line-height-scale));
     }
     .h1,
     h1 {
         font-size: calc(var(--h1-size) * var(--type-heading-scale));
-        line-height: calc(var(--h1-size) * var(--line-height-scale));
+        line-height: calc(var(--h1-size) * var(--type-heading-scale) * var(--line-height-scale));
     }
     .h2,
     h2 {
         font-size: calc(var(--h2-size) * var(--type-heading-scale));
-        line-height: calc(var(--h2-size) * var(--line-height-scale));
+        line-height: calc(var(--h2-size) * var(--type-heading-scale) * var(--line-height-scale));
     }
     .h3,
     h3 {
         font-size: calc(var(--h3-size) * var(--type-heading-scale));
-        line-height: calc(var(--h3-size) * var(--line-height-scale));
+        line-height: calc(var(--h3-size) * var(--type-heading-scale) * var(--line-height-scale));
     }
     .h4,
     h4 {
         font-size: calc(var(--h4-size) * var(--type-heading-scale));
-        line-height: calc(var(--h4-size) * var(--line-height-scale));
+        line-height: calc(var(--h4-size) * var(--type-heading-scale) * var(--line-height-scale));
     }
     .h5,
     h5 {
         font-size: calc(var(--h5-size) * var(--type-heading-scale));
-        line-height: calc(var(--h5-size) * var(--line-height-scale));
+        line-height: calc(var(--h5-size) * var(--type-heading-scale) * var(--line-height-scale));
     }
     .h6,
     h6 {
         font-size: calc(var(--h6-size) * var(--type-heading-scale));
-        line-height: calc(var(--h6-size) * var(--line-height-scale));
+        line-height: calc(var(--h6-size) * var(--type-heading-scale) * var(--line-height-scale));
     }
 }
