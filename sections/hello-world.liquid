@@ -13,7 +13,16 @@
     <p class="b-s border-t pt-4 mt-4">Body small: Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit pariatur perferendis, quo consequuntur iusto dolores fuga voluptas aliquid praesentium esse. Amet nihil facilis quae fugit nisi voluptatem repellendus a neque!</p>
     <p class="b-xs border-t pt-4 mt-4">Body extra small : Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit pariatur perferendis, quo consequuntur iusto dolores fuga voluptas aliquid praesentium esse. Amet nihil facilis quae fugit nisi voluptatem repellendus a neque!</p>
     <a class="text-link b-s mt-8 inline-block px-2" href="https://primer.style/css/storybook/?path=/docs/support-typography--docs" target="_blank">typography ref ></a>
-  </section>
+    <div class="bg-blue-200 mt-8 mb-4 rounded-md p-4 text-blue-700">
+      <div class="flex items-center gap-2">
+        {% render 'icon', icon: 'moon' class: 'stroke-blue-700' %}
+        <h4 class="text-inherit">Guide</h4>
+      </div>
+      <p class="body-small mt-3">
+        Edit <b>typography.liquid</b> to change the typography settings, make sure to apply the same to <b>tailwind.config.js</b>. More settings can be found in <b>theme.css</b>.
+      </p>
+    </div>
+    </section>
   <section>
     <h2 class="h00 my-8">Colors</h2>
 
@@ -59,9 +68,19 @@
         <div>// shadow</div>
       </div>
     </div>
+
+    <div class="bg-blue-200 mt-8 mb-4 rounded-md p-4 text-blue-700">
+      <div class="flex items-center gap-2">
+        {% render 'icon', icon: 'moon' class: 'stroke-blue-700' %}
+        <h4 class="text-inherit">Guide</h4>
+      </div>
+      <p class="body-small mt-3">
+        3am uses the new color schema so section wise color can be changed using the customizer and new color schema can be added using the theme settings, to make make any changes to the schema edit the color_schemes in <b>settings_schema.json</b> and update the css variables at <b>colors.liquid</b> to change color settings, make sure to apply the same to <b>tailwind.config.js</b>.
+      </p>
+    </div>
   </section>
   <section>
-    <h2 class="h00 my-8">Buttons</h2>
+    <h2 class="h00 my-8">Components</h2>
     <div class="flex flex-wrap gap-4 items-center">
       <button class="button button--primary">Button</button>
       <button class="button button--primary" disabled>Disabled Button</button>
@@ -70,10 +89,8 @@
     <div class="mt-4">
       <a class="text-link inline-block px-2" href="#">Link</a>
     </div>
-  </section>
-  <section>
-    <h2 class="h00 my-8">Components</h2>
-    <details class="group/details" open>
+
+    <details class="group/details mt-8" open>
       <summary class="flex justify-between items-center">
         <div class="h4">FAQ</div>
         <div>
@@ -93,6 +110,16 @@
       </summary>
       <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos culpa consectetur alias odit minima nisi natus pariatur vero, consequatur tempore error minus eum, labore nulla animi! Dolorem sit fuga ipsa.</p>
     </details>
+
+    <div class="bg-blue-200 mt-8 mb-4 rounded-md p-4 text-blue-700">
+      <div class="flex items-center gap-2">
+        {% render 'icon', icon: 'moon' class: 'stroke-blue-700' %}
+        <h4 class="text-inherit">Guide</h4>
+      </div>
+      <p class="body-small mt-3">
+        Edit <b>base.tailwind.css</b> to add more component styles.
+      </p>
+    </div>
   </section>
   {% if section.settings.show_spotify_iframe %}
     <section class="border-t">
