@@ -18,6 +18,7 @@
 
     {% comment %} We preconnect to commonly used third-parties to initiate TCP/TLS handshake {% endcomment %}
     <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
+    <link rel="preconnect" href="{{ shop.url }}" crossorigin>
 
     {% comment %} We check if its a system font, or a web-safe font {% endcomment %}
     {% unless settings.type_heading.system? and settings.type_body.system? %}
@@ -25,9 +26,9 @@
     {% endunless %}
 
     {% liquid
-      render 'colors'
-      render 'typography'
       render 'css-variables'
+      render 'typography'
+      render 'colors'
     %}
 
     <script>

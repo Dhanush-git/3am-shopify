@@ -1,16 +1,35 @@
 {% style %}
+  /* Add custom fonts here  */
+  @font-face {
+    font-family: "Work Sans";
+    src: url("{{ 'WorkSans-Regular.ttf' | asset_url }}") format("truetype");
+    font-weight: 400;
+  }
+  @font-face {
+    font-family: "Work Sans";
+    src: url("{{ 'WorkSans-Medium.ttf' | asset_url }}") format("truetype");
+    font-weight: 500;
+  }
+  @font-face {
+    font-family: "Work Sans";
+    src: url("{{ 'WorkSans-Bold.ttf' | asset_url }}") format("truetype");
+    font-weight: 600;
+  }
 
   :root {
     --type-heading-scale: 1;
     --type-body-scale: 1;
     --line-height-scale: 1.5;
 
-    --font-heading-weight: 700;
     --font-body-weight: 400;
+    --font-heading-weight: 600;
+
+    --font-heading-family: "Work Sans";
+    --font-body-family: "Work Sans";
 
     /* 
-    // Heading sizes - mobile
-    // h4—h6 remain the same size on both mobile & desktop 
+      Heading sizes - mobile
+      h4—h6 remain the same size on both mobile & desktop 
     */
 
     --h00-size-mobile: 40px;
@@ -19,7 +38,7 @@
     --h2-size-mobile: 22px;
     --h3-size-mobile: 18px;
 
-    /* // Heading sizes - desktop */
+    /* Heading sizes - desktop */
 
     --h00-size: 48px;
     --h0-size: 40px;

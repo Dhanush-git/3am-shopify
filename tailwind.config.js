@@ -4,6 +4,11 @@ module.exports = {
     "./**/*.{liquid,json}"
   ],
   theme: {
+    fontWeight: {
+      'normal': 400,
+      'medium': 500,
+      'bold': 600
+    },
     extend: {
       colors: {
         'background':  'var(--color-background)',

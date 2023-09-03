@@ -4,6 +4,7 @@ body{
     font-size:calc(var(--body-text) * var(--type-body-scale));
     line-height: calc(var(--body-text) * var(--type-body-scale) * var(--line-height-scale));
     font-weight:var(--font-body-weight);
+    font-family: var(--font-body-family);
 }
 
 /* aka called caption */
@@ -21,6 +22,7 @@ body{
 h1,h2,h3,h4,h5,h6,
 .h00,.h0,.h1,.h2,.h3,.h4,.h5,.h6 {
     font-weight: var(--font-heading-weight);
+    font-family: var(--font-heading-family);
 }
 
 /* Heading sizes - mobile, h4—h6 remain the same size on both mobile & desktop */
