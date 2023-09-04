@@ -7,7 +7,7 @@
 @layer base{
 
     html, body, #MainContent{
-        @apply h-full w-full
+        @apply h-full w-full scroll-smooth
     }
 
     h1,h2,h3,h4,h5,h6,.h00,.h0,.h1,.h2,.h3,.h4,.h5,.h6 {
